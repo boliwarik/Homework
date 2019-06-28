@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body>  
+    <h1 id="top">Контакты</h1>
+    <div class="top-menu">    
+        <p class="top-menu-p"><a href="articles.html">Статьи</a></p>
+        <p class="top-menu-p"><a href="catalog.html">Каталог</a></p>
+        <p class="top-menu-p"><a href="image_gallery.html">Галерея изображений</a></p>
+        <p class="top-menu-p"><a href="check_in.html">Регистрация</a></p>
+        <p class="top-menu-p"><a href="../index.html">Содержание</a></p>
+    </div>     
+    <div class="contacts">
+        <h1>CD PROJEKT S.A.</h1>
+        <p>ul. Jagiellońska 74, building E<br>
+                03-301 Warszawa<br>
+                phone: +48 22 519 69 00</p>
+    </div>
+    <div class="map">  
+        <iframe class="map_content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1594.9488852088882!2d21.021570047569988!3d52.268049314009524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc103b236a29%3A0x95cd2b718c7463c3!2sCD+Projekt+S.A.!5e0!3m2!1sru!2sua!4v1560521200010!5m2!1sru!2sua"></iframe>
+    </div>
+    <div class="container">
+        <h2>Форма обратной связи</h2>
+        <form id="contactForm" action="handler.php" method="post">
+            <div class="field-block">
+                <label for="name">Ваше имя:</label>
+                <input id="name" class="field" name="name" required type="text" placeholder="Петров Петр Петрович">
+            </div>
+            <div class="field-block">
+                <label for="email">Ваш E-mail:</label>
+                <input id="email" class="field" name="email" required type="email" placeholder="boliwar333@gmail.com">
+            </div>
+            <div class="field-block">
+                <label for="phone">Ваш телефон:</label>
+                <input id="phone" class="field" name="phone" required type="text" placeholder="+38-050-205-39-08">
+            </div>
+            <div class="field-block">
+                <label for="message">Текст сообщения:</label>
+                <textarea id="message" class="field" required name="message" rows="4"></textarea>
+            </div>
+            <div class="field-block">
+                <input id="check" name="check" checked type="checkbox">
+                <span class="check-text">Я добровольно отправляю свои данные</span>
+            </div>
+            <button id="button" class="button" type="submit">Отправить</button>
+            <div class="result">
+                <span id="answer"></span>
+                <span id="loader"><img src="images/loader.gif" alt=""></span>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <h2>&copy;Чмыхов Станислав</h2>
+    </div>
+</body>
+</html>

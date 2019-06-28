@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+    <h1 id="top">Регистрация</h1>
+    <div class="top-menu">
+        <p class="top-menu-p"><a href="articles.html">Статьи</a></p>
+        <p class="top-menu-p"><a href="catalog.html">Каталог</a></p>
+        <p class="top-menu-p"><a href="image_gallery.html">Галерея изображений</a></p>
+        <p class="top-menu-p"><a href="../index.html">Содержание</a></p>
+        <p class="top-menu-p"><a href="contacts.html">Контакты</a></p>
+    </div>
+    <div class="container">
+        <h2>Новый пользователь</h2>
+        <form id="contactForm" action="handler.php" method="post">
+            <div class="field-block">
+                <label for="name_first">Фамилия:</label>
+                <input id="name_first" class="field" name="name" required type="text" placeholder="Иванов">
+            </div>
+            <div class="field-block">
+                <label for="name_second">Имя:</label>
+                <input id="name_second" class="field" name="name" required type="text" placeholder="Иван">
+            </div>
+            <div class="field-block">
+                <label for="name_third">Отчество:</label>
+                <input id="name_third" class="field" name="name" required type="text" placeholder="Иванович">
+            </div>
+            <div>
+                <label>Загрузите вашу фотографию:
+                    <input class="button" type="file" name="icon" accept="image/jpeg,image/png">
+                </label>
+            </div>
+            <div class="field-block">
+                <label for="email">Ваш E-mail:</label>
+                <input id="email" class="field" name="email" required type="email" placeholder="boliwar333@gmail.com">
+            </div>
+            <div class="field-block">
+                <label for="phone">Пароль:</label>
+                <input id="phone" class="field" name="phone" required type="password" placeholder="password">
+            </div>
+            <div class="field-block">
+                    <label for="site">Сайт:</label>
+                    <input id="site" class="field" name="url" required type="text" value="http://">
+            </div>
+            <div class="field-block">
+                <p>Выберите пол: 
+                <input type="text" list="gender">
+                    <datalist id="gender">
+                      <option value="Мужчина"></option>
+                      <option value="Женщина"></option>
+                    </datalist>
+                </p>
+            </div>
+            <div class="field-block">
+                <p>Дата рождения: 
+                <input class="form_input" type="date" name="birthday" value="2000-01-01" min="1900-01-01"></p>
+            </div>
+            <div class="field-block">Ваша любимая кухня: 
+                <label><input class="form_input" type="checkbox">Украинская</label>
+                <label><input class="form_input" type="checkbox">Японская</label>
+                <label><input class="form_input" type="checkbox">Средиземноморская</label>
+                <label><input class="form_input" type="checkbox">Индийская</label>
+            </div>
+            <div class="field-block">
+                <label for="message">О себе в произвольной форме:</label>
+                <textarea id="message" class="field" required name="message" rows="4"></textarea>
+            </div>
+            <div class="field-block">
+                <input id="check" name="check" checked type="checkbox">
+                <span class="check-text">Я добровольно отправляю свои данные</span>
+            </div>
+            <button class="button" type="submit">Зарегистрироваться</button>
+            <button class="button" type="reset">Очистить форму</button>
+            <div class="result">
+                <span id="answer"></span>
+                <span id="loader"><img src="images/loader.gif" alt=""></span>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <h2>&copy;Чмыхов Станислав</h2>
+    </div>
+</body>
+</html>
