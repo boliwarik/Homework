@@ -49,13 +49,13 @@
                     <input id="site" class="field" name="url" required type="text" value="http://">
             </div>
             <div class="field-block">
-                <p>Выберите пол: 
-                <input type="text" list="gender">
-                    <datalist id="gender">
-                      <option value="Мужчина"></option>
-                      <option value="Женщина"></option>
-                    </datalist>
-                </p>
+                <label>Выберите пол: 
+                    <input type="text" list="gender" required formmethod="post">
+                        <datalist id="gender">
+                          <option value="Мужчина"></option>
+                          <option value="Женщина"></option>
+                        </datalist>
+                </label>    
             </div>
             <div class="field-block">
                 <p>Дата рождения:
@@ -72,8 +72,9 @@
                 <textarea id="message" class="field" required name="message" rows="4"></textarea>
             </div>
             <div class="field-block">
-                <input id="check" name="check" checked type="checkbox">
-                <span class="check-text">Я добровольно отправляю свои данные</span>
+                <label>Я добровольно отправляю свои данные
+                    <input id="check" name="check" checked type="checkbox">
+                </label>
             </div>
             <button class="button" type="submit">Зарегистрироваться</button>
             <button class="button" type="reset">Очистить форму</button>

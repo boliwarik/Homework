@@ -231,7 +231,7 @@ h2, .field-block {
 }
 .check-text {
 	font-size: 14px;
-	vertical-align: top;
+    vertical-align: top;
 }
 .button {
 	cursor: pointer;
